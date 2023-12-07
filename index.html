@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Loja Tec</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .title-section {
+            margin-left: 60px;
+            margin-top: 35px;
+            margin-bottom: 25px;
+            color: darkblue;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+
+        @media screen and (min-width:992px) {
+            .navbar-toggler-icon {
+                display: none;
+                color: #fff;
+            }
+        }
+
+        @media screen and (min-width:768px) and (max-width:1024px) {
+            .col-4 {
+                width: 50%;
+            }
+        }
+        @media screen and (max-width:766px) {
+            .col-4{
+                width: 100%;
+                margin-left: -161px;
+                margin-bottom: 10px;
+            }
+            
+            .card-coluna,
+            h2 {
+                display: block;
+                margin-left:165px;
+                margin-top: 20px;
+            }
+
+            .container {
+                display: block;
+            }
+
+            .row {
+                display: block;
+            }
+            h2{
+                width: 100vw;
+                margin-left: 75px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Projeto Ebac Web</h1>
+                <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav class="collapse navbar-collapse justify-content-end" id="menu">
+                    <ul class="nav navbar-nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Inicio</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Projetos</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">Acesse Já</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+        <div class="container">
+            <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="3000" class="carousel-item active">
+                        <img class="d-block w-100 img-edit" src="./img/geometric-1732847_640.jpg">
+                        <div class="carousel-caption">
+                            <h3 class="texto">Fundo Tec azul</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 img-edit" src="./img/cyber-3400789_640 (1).jpg">
+                        <div class="carousel-caption">
+                            <h3>Fundo Tecnologico</h2>
+                        </div>
+                    </div>
+                    <div data-bs-interval="3000" class="carousel-item">
+                        <img class="d-block w-100 img-edit " src="./img/cyber-security-2296269_640.jpg">
+                        <div class="carousel-caption">
+                            <h3>Animações Tec</h2>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carousel-exemplo" data-bs-slide="prev" type="button">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button type="button" class="carousel-control-next" data-bs-target="#carousel-exemplo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo"  data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel-exemplo"  data-bs-slide-to="2"></button>
+                </div>
+            </div>
+        </div>
+        <section class="secao-cards">
+            <h2 class="title-section">Saiba mais sobre Tecnologia</h2>
+            <div class="container card-coluna">
+                <div class="row text-align">
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                <h4>Tecnologia</h4>
+                            </header>
+                            <div class="card-body">
+                                <h5>Tecnologias e suas novidades</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta libero atque at qui, impedit, commodi ullam non laborum</p>
+                                <button type="button" class="btn btn-primary">Leia mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                <h4>Curiosidade</h4>
+                            </header>
+                            <div class="card-body">
+                                <h5>Sobre Tecnologia</h5>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse, error enim nobis necessitatibus magnam.</p>
+                                <button type="button" class="btn btn-primary">Leia mais</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card">
+                            <header class="card-header">
+                                <h5>Novas invenções</h5>
+                            </header>
+                            <div class="card-body">
+                                <h5>Estudos Sobre Tecnologia</h5>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, modi? Commodi quia obcaecati aliquid perferendis, tempore voluptate libero.</p>
+                                <button type="button" class="btn btn-primary">Leia mais</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
